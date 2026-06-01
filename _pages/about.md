@@ -3,6 +3,8 @@ permalink: /about/
 title: "About"
 ---
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
+Since 2024, I have been posting many tips & tutorials about MMD & Blender on Discord. The tutorials on this blog are the answers to the questions that were asked in the servers. I learned a lot about MMD & Blender through trying to answer those questions.
 
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+However, it's rather hard to look them up, because they are buried in messages and there's no tag or keyword system. So in this blog, I'm going to make those valuable information easier to access for everyone. I sincerely hope you will find it helpful.
+
+The tutorials will be split into 3 categories: MMD, Blender and others. And relevant tags will be added to every article. (this might change in the future)

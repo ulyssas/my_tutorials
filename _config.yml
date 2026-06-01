@@ -13,15 +13,12 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: MM
+locale: "en-US"
+title: "My Tutorials"
 email:
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-twitter_username: username
-github_username: username
-minimal_mistakes_skin: default
+  Here's a Jekyll blog for hosting my tips I wrote on Discord.
+minimal_mistakes_skin: "default"
 search: true
 
 # Build settings
@@ -58,34 +55,38 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "First Lastname"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  name: "Ulyssa"
+  avatar: "/assets/images/bio-photo.png"
+  bio: "Hi! I make extensions for Blender & Inkscape, and MMD & Blender tutorials."
+  location: "Tokyo, Japan"
   links:
-    - label: "Website"
+    - label: "Homepage"
       icon: "fas fa-fw fa-link"
-      url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+      url: "https://ulyssas.github.io"
+    - label: "YouTube"
+      icon: "fab fa-fw fa-youtube"
+      url: "https://www.youtube.com/@ulyssas"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/ulyssas"
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
+      url: "https://gitlab.com/WimPum"
 
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+    - label: "Homepage"
+      icon: "fas fa-fw fa-home"
+      url: "https://ulyssas.github.io"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/ulyssas"
+    - label: "Source"
+      icon: "fas fa-fw fa-link"
+      url: "https://github.com/ulyssas/my_tutorials"
+
+atom_feed:
+  hide: true
 
 defaults:
   # _posts
