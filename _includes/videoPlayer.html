@@ -2,7 +2,7 @@
 
 <div class="embed-container">
   <video controls preload="metadata" style="width:100%; border-radius:8px; background:#000;">
-    <source src="{{ include.url }}" type="video/mp4">
+    <source src="{% if include.url contains '://' %}{{ include.url }}{% else %}{{ include.url | relative_url }}{% endif %}" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </div>
