@@ -9,3 +9,13 @@ search: false
 @import "minimal-mistakes"; // main partials
 
 @import "minimal-mistakes/discord-gallery";
+
+.mfp-figure::after {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.mfp-bg {
+  background: #000 !important;
+  opacity: 0.85 !important;
+}
