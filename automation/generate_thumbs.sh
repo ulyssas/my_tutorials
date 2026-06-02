@@ -9,10 +9,21 @@ mkdir -p "$DST_DIR"
 
 echo "Optimizing images..."
 
-find "$SRC_DIR" -type f \( -iname "*.png" -o -iname "*.jpg" -o -iname "*.jpeg" \) | while read -r img; do
+find "$SRC_DIR" -type f \( -iname "*.png" -o -iname "*.jpg" -o -iname "*.jpeg" \) -print0 | while IFS= read -r -d '' img; do
+    filename=$(basename "$img")
+    if [[ "$filename" == *" "* ]]; then
+        echo "WARNING: Space detected in filename: \"$filename\""
+        echo "   Path: $img"
+        echo "   It is highly recommended to use '_' instead of spaces for web URLs."
+    fi
+
     rel_path=${img#$SRC_DIR/}
     dest_path="$DST_DIR/${rel_path%.*}.webp"
     dest_sub_dir=$(dirname "$dest_path")
+
+    if [[ -f "$dest_path" ]]; then
+        continue
+    fi
 
     mkdir -p "$dest_sub_dir"
     cwebp -resize $MAX_WIDTH 0 -q 75 "$img" -o "$dest_path" > /dev/null 2>&1
