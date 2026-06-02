@@ -13,12 +13,14 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+minimal_mistakes_skin: "default"
+
 locale: "en-US"
 title: "My Tutorials"
 email:
 description: >- # this means to ignore newlines until "baseurl:"
   Here's a Jekyll blog for hosting my tips I wrote on Discord.
-minimal_mistakes_skin: "default"
+enable_copy_code_button: true
 search: true
 
 # Build settings
