@@ -1,8 +1,27 @@
-<!-- Feel free to change the width and height to your desired video size. -->
+{% comment %} auto path completion {% endcomment %}
+{% assign post_basename = page.path | split: "/" | last | remove: ".md" %}
+{% assign folder_id = post_basename | slice: 11, 255 %}
+{% assign img_base = "/assets/images/" | append: folder_id | append: "/" %}
+
+{% comment %}
+  1. Use URL as-is if it includes http(s)://
+  2. Relative path if it starts from /
+  3. auto complete (filename) for everything else
+{% endcomment %}
+
+{% assign first_char = include.url | slice: 0 %}
+
+{% if include.url contains '://' %}
+  {% assign video_src = include.url %}
+{% elsif first_char == '/' %}
+  {% assign video_src = include.url | relative_url %}
+{% else %}
+  {% assign video_src = img_base | append: include.url | relative_url %}
+{% endif %}
 
 <div class="embed-container">
   <video controls preload="metadata" style="width:100%; border-radius:8px; background:#000;">
-    <source src="{% if include.url contains '://' %}{{ include.url }}{% else %}{{ include.url | relative_url }}{% endif %}" type="video/mp4">
+    <source src="{{ video_src }}" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </div>

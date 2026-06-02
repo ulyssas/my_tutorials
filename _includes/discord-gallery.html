@@ -1,0 +1,44 @@
+{% comment %} auto path completion {% endcomment %}
+{% assign post_basename = page.path | split: "/" | last | remove: ".md" %}
+{% assign folder_id = post_basename | slice: 11, 255 %}
+{% assign img_base = "/assets/images/" | append: folder_id | append: "/" %}
+{% assign thumb_base = "/assets/thumbs/" | append: folder_id | append: "/" %}
+
+{% if include.id %}
+  {% assign gallery = page[include.id] %}
+{% else %}
+  {% assign gallery = page.gallery %}
+{% endif %}
+
+{% if include.layout %}
+  {% assign gallery_layout = include.layout %}
+{% else %}
+  {% if gallery.size == 2 %}
+    {% assign gallery_layout = 'half' %}
+  {% elsif gallery.size >= 3 %}
+    {% assign gallery_layout = 'third' %}
+  {% else %}
+    {% assign gallery_layout = '' %}
+  {% endif %}
+{% endif %}
+
+<figure class="discord-gallery {{ include.class }}">
+  {% for img in gallery %}
+    {% comment %} use img: "name.png" instead of url or image_path! {% endcomment %}
+    {% assign filename = img.img %}
+    {% assign thumb_name = filename | replace: ".png", ".webp" | replace: ".jpg", ".webp" | replace: ".jpeg", ".webp" %}
+    {% assign original_path = img_base | append: filename | relative_url %}
+    {% assign thumb_path = thumb_base | append: thumb_name | relative_url %}
+
+    <a href="{{ original_path }}"
+       class="popup-video"
+       {% if img.title %}title="{{ img.title | escape_once }}"{% endif %}>
+      <img src="{{ thumb_path }}"
+           alt="{% if img.alt %}{{ img.alt | escape_once }}{% else %}{{ img.title | escape_once }}{% endif %}">
+    </a>
+  {% endfor %}
+
+  {% if include.caption %}
+    <figcaption>{{ include.caption | markdownify | remove: "<p>" | remove: "</p>" }}</figcaption>
+  {% endif %}
+</figure>
