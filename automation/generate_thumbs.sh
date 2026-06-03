@@ -50,5 +50,12 @@ find "$SRC_DIR" -type f \( -iname "*.png" -o -iname "*.jpg" -o -iname "*.jpeg" \
     fi
 done
 
+echo "Cleaning up empty directories in $SRC_DIR..."
+
+find "$SRC_DIR" -type d -empty -not -path "$SRC_DIR" -depth -print | while read -r empty_dir; do
+    echo "🗑️  Deleting empty folder: ${empty_dir#$SRC_DIR/}"
+    rmdir "$empty_dir"
+done
+
 echo "Done! (webp thumbnails in $DST_DIR)"
 popd
