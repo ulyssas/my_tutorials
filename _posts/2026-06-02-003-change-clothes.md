@@ -38,7 +38,7 @@ Next, parent to armature (press shift while dragging).
 
 {% include videoPlayer.html url="2024-10-05_23.50.42-9f1349291e8bb7af.mp4" %}
 
-Then select the clothes, put original model in Robust Weight Transfer `source`, and click `Transfer Weights`.
+Then select the clothes, put original model in [Robust Weight Transfer](https://github.com/sentfromspacevr/robust-weight-transfer) `source`, and click `Transfer Weights`.
 
 {% include discord-gallery.html id="gallery2" %}
 
