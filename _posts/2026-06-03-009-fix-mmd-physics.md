@@ -20,6 +20,8 @@ This is how to enable MMD rigidbody physics in Blender:
 
 {% include videoPlayer.html url="PhysicsGuide0000-1696-73f84821ecd6e751.mp4" %}
 
+credit: YYB LOVE TRIAL MIKU by YYB & cjpaoshen
+
 if that didn't work, you can
 
 - increase motion margin: Increase the margin when importing the motion.
