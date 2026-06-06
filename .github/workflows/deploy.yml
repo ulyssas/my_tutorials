@@ -29,7 +29,7 @@ jobs:
       - name: Generate XML Sitemap
         uses: cicirello/generate-sitemap@v1.10.4
         with:
-          base-url-path: https://ulyssas.github.io/my_tutorials/
+          base-url-path: https://ulyssas.github.io/my_tutorials
           path-to-root: ./_site
 
       - name: Upload artifact
