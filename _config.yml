@@ -20,6 +20,9 @@ title: "My Tutorials"
 email:
 description: >- # this means to ignore newlines until "baseurl:"
   Here's a Jekyll blog for hosting my tips I wrote on Discord.
+url: "https://ulyssas.github.io"
+baseurl: "/my_tutorials"
+repository: "ulyssas/my_tutorials"
 enable_copy_code_button: true
 search: true
 
