@@ -23,18 +23,23 @@
 {% endif %}
 
 <figure class="discord-gallery {{ include.class }}">
-  {% for img in gallery %}
+  {% for item in gallery %}
     {% comment %} use img: "name.png" instead of url or image_path! {% endcomment %}
-    {% assign filename = img.img %}
-    {% assign thumb_name = filename | replace: ".png", ".webp" | replace: ".jpg", ".webp" | replace: ".jpeg", ".webp" %}
-    {% assign original_path = img_base | append: filename | relative_url %}
-    {% assign thumb_path = thumb_base | append: thumb_name | relative_url %}
+    {% if item.img contains '://' %}
+      {% assign original_path = item.img %}
+      {% assign thumb_path = item.img %}
+    {% else %}
+      {% assign filename = item.img %}
+      {% assign thumb_name = filename | replace: ".png", ".webp" | replace: ".jpg", ".webp" | replace: ".jpeg", ".webp" %}
+      {% assign original_path = img_base | append: filename | relative_url %}
+      {% assign thumb_path = thumb_base | append: thumb_name | relative_url %}
+    {% endif %}
 
     <a href="{{ original_path }}"
        class="popup-video"
-       {% if img.title %}title="{{ img.title | escape_once }}"{% endif %}>
+       {% if item.title %}title="{{ item.title | escape_once }}"{% endif %}>
       <img src="{{ thumb_path }}"
-           alt="{% if img.alt %}{{ img.alt | escape_once }}{% else %}{{ img.title | escape_once }}{% endif %}">
+           alt="{% if item.alt %}{{ item.alt | escape_once }}{% else %}{{ item.title | escape_once }}{% endif %}">
     </a>
   {% endfor %}
 
