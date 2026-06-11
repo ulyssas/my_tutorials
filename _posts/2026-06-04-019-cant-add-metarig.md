@@ -32,6 +32,7 @@ When adding metarig fails in MMD Tools Append, it's always because bone names ar
 {% include discord-gallery.html id="gallery1" %}
 
 I checked the model, and the bones are indeed named wrong:
+
 - 右親指０ should be renamed to 左親指０
 - 右親指０.001 should be renamed to 右親指０
 

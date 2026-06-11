@@ -44,6 +44,7 @@ You can use [MMD Tools Helper](https://github.com/ulyssas/mmd_tools_helper/relea
 {% include discord-gallery.html id="gallery3" %}
 
 There are other toon shaders for Blender:
+
 - [kirytoonshader](https://cginterest.com/2022/08/01/blender-eevee-用の無料トゥーンシェーダー-kirytoonshader-ver2/)
 - [KaioToon6](https://eritokaio.gumroad.com/l/KaioToon6)
 

@@ -11,11 +11,13 @@ tags:
 In explorer, paste this to the address bar:
 
 For Blender 3.6
+
 ```
 %appdata%\Blender Foundation\Blender\3.6\scripts\addons\
 ```
 
 For Blender 4.5 (extension platform)
+
 ```
 %appdata%\Blender Foundation\Blender\4.5\extensions\user_default\
 ```
