@@ -1,0 +1,22 @@
+.gist .gist-file {
+  margin-bottom: 1.5em;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.gist .gist-data {
+  max-height: 400px;
+  overflow: auto !important;
+  border-bottom: none;
+}
+
+/* kill standard gist scroll bar */
+.gist .blob-wrapper {
+  overflow-x: visible !important;
+  overflow-y: visible !important;
+}
+
+.gist table.highlight {
+  width: 100% !important;
+  display: table !important;
+}

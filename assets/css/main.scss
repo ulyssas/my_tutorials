@@ -9,6 +9,7 @@ search: false
 @import "minimal-mistakes"; // main partials
 
 @import "minimal-mistakes/discord-gallery";
+@import "minimal-mistakes/gist-frame";
 
 .mfp-figure::after {
   background: transparent !important;
