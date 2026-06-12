@@ -3,8 +3,8 @@ title: "How to setup physics"
 categories:
   - Tutorial-MMD
 tags:
-  - material
-  - mmd_tools
+  - physics
+  - pmxe
 gallery:
   - img: Screenshot_2025-02-26_at_19.57.42-ff4d86bb667faf0a.png
     alt: "thumbnail"
