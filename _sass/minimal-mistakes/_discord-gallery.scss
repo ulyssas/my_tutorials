@@ -15,7 +15,10 @@ figure.discord-gallery {
   // ------------------------------------------------
   // common child image style
   // ------------------------------------------------
-  a, img, video, .embed-container {
+  a,
+  img,
+  video,
+  .embed-container {
     display: block !important;
     margin: 0 !important;
     border-radius: 8px;
@@ -50,10 +53,13 @@ figure.discord-gallery {
   // 2-6 images: square & grids
   // ------------------------------------------------
   &:has(> :nth-child(2)) {
+    >* {
+      aspect-ratio: 1 / 1 !important;
 
-    a,
-    img {
-      aspect-ratio: 1 / 1 !important; // use square
+      img,
+      video {
+        aspect-ratio: 1 / 1 !important; // use square
+      }
     }
   }
 
