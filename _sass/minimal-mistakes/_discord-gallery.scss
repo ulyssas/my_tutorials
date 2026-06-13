@@ -15,8 +15,7 @@ figure.discord-gallery {
   // ------------------------------------------------
   // common child image style
   // ------------------------------------------------
-  a,
-  img {
+  a, img, video, .embed-container {
     display: block !important;
     margin: 0 !important;
     border-radius: 8px;
