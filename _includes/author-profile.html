@@ -32,6 +32,9 @@
         </li>
       {% endif %}
 
+      {% if author.timezone %}
+        <li><i class="fas fa-fw fa-clock" aria-hidden="true"></i><span id="gh-time" itemprop="name" class="label">--:--</span></li>
+      {% endif %}
       {% if author.links %}
         {% for link in author.links %}
           {% if link.label and link.url %}

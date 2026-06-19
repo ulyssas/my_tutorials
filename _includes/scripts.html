@@ -27,3 +27,24 @@
     <script src="{{ script | relative_url }}"></script>
   {% endfor %}
 {% endif %}
+
+{% if site.author.timezone %}
+<script>
+  (function() {
+    const formatter = new Intl.DateTimeFormat("ja-JP", {
+      timeZone: "Asia/Tokyo",
+      hour: "2-digit",
+      minute: "2-digit",
+      hour12: false
+    });
+
+    function updateGitHubTime() {
+      const now = new Date();
+      document.getElementById("gh-time").textContent = formatter.format(now);
+    }
+
+    //setInterval(updateGitHubTime, 1000);
+    updateGitHubTime();
+  })();
+</script>
+{% endif %}

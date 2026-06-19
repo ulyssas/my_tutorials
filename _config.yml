@@ -64,6 +64,7 @@ author:
   avatar: "/assets/images/bio-photo.png"
   bio: "Hi! I make extensions for Blender & Inkscape, and MMD & Blender tutorials."
   location: "Tokyo, Japan"
+  timezone: "Asia/Tokyo"
   links:
     - label: "Homepage"
       icon: "fas fa-fw fa-link"
