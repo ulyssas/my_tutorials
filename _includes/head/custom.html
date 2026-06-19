@@ -1,0 +1,11 @@
+<!-- start custom head snippets -->
+{% if page.theme_color %}
+<meta name="theme-color" content="{{ page.theme_color }}" />
+{% elsif page.categories contains "Tutorial-Blender" %}
+<meta name="theme-color" content="#e87d0d" />
+{% else %}
+<meta name="theme-color" content="#ffffff" />
+{% endif %}
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
