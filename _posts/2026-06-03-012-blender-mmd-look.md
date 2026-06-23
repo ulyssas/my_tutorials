@@ -47,5 +47,6 @@ There are other toon shaders for Blender:
 
 - [kirytoonshader](https://cginterest.com/2022/08/01/blender-eevee-用の無料トゥーンシェーダー-kirytoonshader-ver2/)
 - [KaioToon6](https://eritokaio.gumroad.com/l/KaioToon6)
+- [LSCherry](https://github.com/lvoxx/LSCherry)
 
 credit: Lisa, Sucrose, Lumine (Genshin Impact), カルも式初音ミク
