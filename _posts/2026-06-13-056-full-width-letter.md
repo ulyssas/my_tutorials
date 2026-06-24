@@ -1,5 +1,8 @@
 ---
 title: "半角 (half-width) vs 全角 (full-width)"
+redirect_from:
+  - /056
+  - /56
 categories:
   - Tutorial-MMD
 tags:

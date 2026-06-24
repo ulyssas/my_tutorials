@@ -1,5 +1,8 @@
 ---
 title: "Running MMD on Asahi Linux"
+redirect_from:
+  - /042
+  - /42
 categories:
   - Tutorial-MMD
 tags:

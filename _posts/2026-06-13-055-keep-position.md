@@ -1,5 +1,8 @@
 ---
 title: "How to force the model to stay in the same position"
+redirect_from:
+  - /055
+  - /55
 categories:
   - Tutorial-MMD
 tags:

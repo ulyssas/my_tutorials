@@ -1,5 +1,8 @@
 ---
 title: "How to bake light animation"
+redirect_from:
+  - /079
+  - /79
 categories:
   - Tutorial-Blender
 tags:

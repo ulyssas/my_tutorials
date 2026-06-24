@@ -1,5 +1,8 @@
 ---
 title: "General advices about MMD in Blender"
+redirect_from:
+  - /057
+  - /57
 categories:
   - Tutorial-Blender
 tags:

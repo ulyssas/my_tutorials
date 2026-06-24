@@ -1,5 +1,9 @@
 ---
 title: "How to change clothes of models"
+redirect_from:
+  - /003
+  - /3
+  - /03
 categories:
   - Tutorial-Blender
 tags:

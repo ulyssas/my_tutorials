@@ -1,5 +1,9 @@
 ---
 title: "Using MMD rigidbody physics in Blender"
+redirect_from:
+  - /009
+  - /9
+  - /09
 categories:
   - Tutorial-Blender
 tags:

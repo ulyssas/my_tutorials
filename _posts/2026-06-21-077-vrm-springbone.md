@@ -1,5 +1,8 @@
 ---
 title: "How to use VRM 1.x SpringBone in Blender"
+redirect_from:
+  - /077
+  - /77
 categories:
   - Tutorial-Blender
 tags:

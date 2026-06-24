@@ -1,5 +1,8 @@
 ---
 title: "Modeling softwares"
+redirect_from:
+  - /075
+  - /75
 categories:
   - Tutorial-Other
 tags:

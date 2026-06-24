@@ -1,5 +1,8 @@
 ---
 title: "How to convert to MMD material"
+redirect_from:
+  - /026
+  - /26
 categories:
   - Tutorial-Blender
 tags:

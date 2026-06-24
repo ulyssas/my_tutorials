@@ -1,5 +1,8 @@
 ---
 title: "Parent bone & Child bone"
+redirect_from:
+  - /053
+  - /53
 categories:
   - Tutorial-Blender
 tags:

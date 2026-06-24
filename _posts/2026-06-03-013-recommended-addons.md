@@ -1,5 +1,8 @@
 ---
 title: "Recommended addons for Blender"
+redirect_from:
+  - /013
+  - /13
 categories:
   - Tutorial-Blender
 tags:

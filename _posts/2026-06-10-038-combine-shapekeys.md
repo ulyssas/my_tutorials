@@ -1,5 +1,8 @@
 ---
 title: "How to combine shapekeys"
+redirect_from:
+  - /038
+  - /38
 categories:
   - Tutorial-Blender
 tags:

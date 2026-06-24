@@ -1,5 +1,8 @@
 ---
 title: "Export PMX as FBX for Unity"
+redirect_from:
+  - /023
+  - /23
 categories:
   - Tutorial-Blender
 tags:

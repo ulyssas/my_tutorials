@@ -1,5 +1,8 @@
 ---
 title: "How to save/load bone order"
+redirect_from:
+  - /080
+  - /80
 categories:
   - Tutorial-MMD
 tags:

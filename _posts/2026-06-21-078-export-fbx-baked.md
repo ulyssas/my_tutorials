@@ -1,5 +1,8 @@
 ---
 title: "How to import pose, bake physics then export to FBX"
+redirect_from:
+  - /078
+  - /78
 categories:
   - Tutorial-Blender
 tags:

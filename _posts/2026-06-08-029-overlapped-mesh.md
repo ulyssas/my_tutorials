@@ -1,5 +1,8 @@
 ---
 title: "How to fix transparent models in Cycles"
+redirect_from:
+  - /029
+  - /29
 categories:
   - Tutorial-Blender
 tags:

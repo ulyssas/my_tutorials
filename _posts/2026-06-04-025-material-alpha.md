@@ -1,5 +1,8 @@
 ---
 title: "How to add transparency to material"
+redirect_from:
+  - /025
+  - /25
 categories:
   - Tutorial-Blender
 tags:

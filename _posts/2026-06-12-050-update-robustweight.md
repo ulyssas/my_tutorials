@@ -1,5 +1,8 @@
 ---
 title: "Updating Robust Weight Transfer"
+redirect_from:
+  - /050
+  - /50
 categories:
   - Tutorial-Blender
 tags:

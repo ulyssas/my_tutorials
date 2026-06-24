@@ -1,5 +1,8 @@
 ---
 title: "What does the leg slider do in Append Rigify?"
+redirect_from:
+  - /085
+  - /85
 categories:
   - Tutorial-Blender
 tags:

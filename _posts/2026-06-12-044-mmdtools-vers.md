@@ -1,5 +1,8 @@
 ---
 title: "MMD Tools and supported Blender versions"
+redirect_from:
+  - /044
+  - /44
 categories:
   - Tutorial-Blender
 tags:

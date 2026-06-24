@@ -1,5 +1,9 @@
 ---
 title: "How to manually install addons"
+redirect_from:
+  - /004
+  - /4
+  - /04
 categories:
   - Tutorial-Blender
 tags:

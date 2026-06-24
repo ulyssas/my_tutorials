@@ -1,5 +1,8 @@
 ---
 title: "How to prevent materials from merging when exporting"
+redirect_from:
+  - /054
+  - /54
 categories:
   - Tutorial-Blender
 tags:

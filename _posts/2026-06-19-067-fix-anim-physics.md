@@ -1,5 +1,8 @@
 ---
 title: "How to fix physics simulation in MMD"
+redirect_from:
+  - /067
+  - /67
 categories:
   - Tutorial-MMD
 tags:

@@ -1,5 +1,8 @@
 ---
 title: "Turning Pelvis into MMD lower body"
+redirect_from:
+  - /071
+  - /71
 categories:
   - Tutorial-Blender
 tags:

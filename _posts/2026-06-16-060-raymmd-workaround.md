@@ -1,5 +1,8 @@
 ---
 title: "Ray-MMD workarounds"
+redirect_from:
+  - /060
+  - /60
 categories:
   - Tutorial-MMD
 tags:

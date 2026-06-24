@@ -1,5 +1,8 @@
 ---
 title: "Replicating MMD look in Blender"
+redirect_from:
+  - /012
+  - /12
 categories:
   - Tutorial-Blender
 tags:

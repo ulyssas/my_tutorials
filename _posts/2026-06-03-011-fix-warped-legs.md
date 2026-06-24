@@ -1,5 +1,8 @@
 ---
 title: "How to fix warped legs of Rigify integrated MMD models"
+redirect_from:
+  - /011
+  - /11
 categories:
   - Tutorial-Blender
 tags:

@@ -1,5 +1,8 @@
 ---
 title: "How to make MME"
+redirect_from:
+  - /010
+  - /10
 categories:
   - Tutorial-MMD
 tags:

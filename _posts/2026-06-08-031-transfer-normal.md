@@ -1,5 +1,8 @@
 ---
 title: "How to fix broken normal"
+redirect_from:
+  - /031
+  - /31
 categories:
   - Tutorial-Blender
 tags:

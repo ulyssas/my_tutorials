@@ -1,5 +1,8 @@
 ---
 title: "How to install MMD Tools Append"
+redirect_from:
+  - /051
+  - /51
 categories:
   - Tutorial-Blender
 tags:

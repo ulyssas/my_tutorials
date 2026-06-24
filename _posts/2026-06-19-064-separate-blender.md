@@ -1,5 +1,8 @@
 ---
 title: "How to separate parts in Blender"
+redirect_from:
+  - /064
+  - /64
 categories:
   - Tutorial-Blender
 tags:

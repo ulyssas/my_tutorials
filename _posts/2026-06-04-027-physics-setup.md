@@ -1,5 +1,8 @@
 ---
 title: "How to setup physics"
+redirect_from:
+  - /027
+  - /27
 categories:
   - Tutorial-MMD
 tags:

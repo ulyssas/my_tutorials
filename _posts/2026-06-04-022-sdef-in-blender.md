@@ -1,5 +1,8 @@
 ---
 title: "SDEF in Blender"
+redirect_from:
+  - /022
+  - /22
 categories:
   - Tutorial-Blender
 tags:

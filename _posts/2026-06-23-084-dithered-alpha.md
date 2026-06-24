@@ -1,5 +1,8 @@
 ---
 title: "How to fix dithered transparency"
+redirect_from:
+  - /084
+  - /84
 categories:
   - Tutorial-Blender
 tags:

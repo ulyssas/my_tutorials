@@ -1,5 +1,8 @@
 ---
 title: "How to separate parts in PmxEditor"
+redirect_from:
+  - /063
+  - /63
 categories:
   - Tutorial-MMD
 tags:

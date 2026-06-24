@@ -1,5 +1,9 @@
 ---
 title: "How to make scaling morph"
+redirect_from:
+  - /001
+  - /1
+  - /01
 categories:
   - Tutorial-MMD
 tags:

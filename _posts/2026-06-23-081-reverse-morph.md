@@ -1,5 +1,8 @@
 ---
 title: "How to reverse & apply vertex morphs"
+redirect_from:
+  - /081
+  - /81
 categories:
   - Tutorial-MMD
 tags:

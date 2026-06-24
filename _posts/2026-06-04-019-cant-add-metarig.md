@@ -1,5 +1,8 @@
 ---
 title: "What to do when you can't add metarig"
+redirect_from:
+  - /019
+  - /19
 categories:
   - Tutorial-Blender
 tags:

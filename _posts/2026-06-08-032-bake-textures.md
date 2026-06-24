@@ -1,5 +1,8 @@
 ---
 title: "How to bake textures"
+redirect_from:
+  - /032
+  - /32
 categories:
   - Tutorial-Blender
 tags:

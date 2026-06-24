@@ -1,5 +1,8 @@
 ---
 title: "What is MMD Tools Append?"
+redirect_from:
+  - /072
+  - /72
 categories:
   - Tutorial-Blender
 tags:

@@ -1,5 +1,8 @@
 ---
 title: "Screencast Keys"
+redirect_from:
+  - /018
+  - /18
 categories:
   - Tutorial-Blender
 tags:

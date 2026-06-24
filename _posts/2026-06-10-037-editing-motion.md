@@ -1,5 +1,8 @@
 ---
 title: "How to edit motions in Blender"
+redirect_from:
+  - /037
+  - /37
 categories:
   - Tutorial-Blender
 tags:

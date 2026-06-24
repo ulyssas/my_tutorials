@@ -1,5 +1,8 @@
 ---
 title: "Advantages of MMM"
+redirect_from:
+  - /062
+  - /62
 categories:
   - Tutorial-MMD
 tags:
