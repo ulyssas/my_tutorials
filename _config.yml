@@ -67,6 +67,9 @@ author:
   location: "Tokyo, Japan"
   timezone: "Asia/Tokyo"
   links:
+    - label: "Feeling Lucky?"
+      icon: "fa-solid fa-kiwi-bird"
+      url: "/my_tutorials/random/"
     - label: "Homepage"
       icon: "fas fa-fw fa-link"
       url: "https://ulyssas.github.io"
