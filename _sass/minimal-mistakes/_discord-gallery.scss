@@ -1,121 +1,146 @@
 figure.discord-gallery {
-  display: grid !important;
-  gap: 4px !important;
+  // fallback for older browsers
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px !important;
   margin: 1.5em 0 !important;
   padding: 0 !important;
   width: 100% !important;
-  grid-template-columns: repeat(6, 1fr) !important;
-  grid-auto-rows: min-content !important;
 
   &::before,
   &::after {
     display: none !important;
   }
 
-  // ------------------------------------------------
-  // common child image style
-  // ------------------------------------------------
-  a,
-  img,
-  video,
-  .embed-container {
+  >* {
+    flex: 1 1 250px !important;
+    max-width: 100% !important;
     display: block !important;
-    margin: 0 !important;
-    border-radius: 8px;
-    border: none !important;
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important; // cover for 2+ images
-  }
 
-  // ------------------------------------------------
-  // 1 image: no grid
-  // ------------------------------------------------
-  &:has(> :last-child:nth-child(1)) {
-    display: block !important; // remove grid
-
-    >* {
-      width: fit-content !important;
-      max-width: 100% !important;
-
-      img {
-        width: auto !important;
-        max-width: 100% !important;
-        height: auto !important;
-        max-height: 500px !important; // avoid tall image
-        object-fit: contain !important; // no trimming
-        aspect-ratio: auto !important; // no "Constrain proportions"
-      }
-    }
-  }
-
-  // ------------------------------------------------
-  // 2-6 images: square & grids
-  // ------------------------------------------------
-  &:has(> :nth-child(2)) {
-    >* {
-      aspect-ratio: 1 / 1 !important;
-
-      img,
-      video {
-        aspect-ratio: 1 / 1 !important; // use square
-      }
-    }
-  }
-
-  // 2 images (side-by-side)
-  &:has(> :last-child:nth-child(2)) {
-    >* {
-      grid-column: span 3 !important;
-    }
-  }
-
-  // 3 images (1 major (left) + 2 minors)
-  &:has(> :last-child:nth-child(3)) {
-    > :nth-child(1) {
-      grid-column: span 4 !important;
-      grid-row: span 2 !important;
-    }
-
-    > :nth-child(2),
-    > :nth-child(3) {
-      grid-column: span 2 !important;
-    }
-  }
-
-  // 4 images (wide, 1.6:1)
-  &:has(> :last-child:nth-child(4)) {
-    >* {
-      grid-column: span 3 !important;
-      aspect-ratio: 1.6 / 1 !important;
-    }
-  }
-
-  // 5 images (top 2, bottom 3)
-  &:has(> :last-child:nth-child(5)) {
-
-    > :nth-child(1),
-    > :nth-child(2) {
-      grid-column: span 3 !important;
-    }
-
-    > :nth-child(3),
-    > :nth-child(4),
-    > :nth-child(5) {
-      grid-column: span 2 !important;
-    }
-  }
-
-  // 6 images (top 3, bottom 3)
-  &:has(> :last-child:nth-child(6)) {
-    >* {
-      grid-column: span 2 !important;
+    a,
+    img,
+    video,
+    .embed-container {
+      display: block !important;
+      margin: 0 !important;
+      border-radius: 8px;
+      border: none !important;
+      width: 100% !important;
+      height: auto !important;
+      max-height: 350px !important;
+      object-fit: cover !important; // cover for 2+ images
     }
   }
 
   figcaption {
-    grid-column: 1 / -1 !important;
+    width: 100% !important;
     display: block !important;
     margin-top: 8px !important;
+  }
+
+  // newer environment
+  @supports #{"(selector(:has(*))) and (aspect-ratio: 1 / 1)"} {
+    display: grid !important;
+    gap: 4px !important;
+    grid-template-columns: repeat(6, 1fr) !important;
+    grid-auto-rows: min-content !important;
+
+    >* {
+      flex: none !important;
+      max-width: none !important;
+
+      a,
+      img,
+      video,
+      .embed-container {
+        height: 100% !important;
+        max-height: none !important;
+      }
+    }
+
+    // 1 image: no grid
+    &:has(> :last-child:nth-child(1)) {
+      display: block !important; // remove grid
+
+      >* {
+        width: fit-content !important;
+        max-width: 100% !important;
+
+        img {
+          width: auto !important;
+          max-width: 100% !important;
+          height: auto !important;
+          max-height: 500px !important; // avoid tall image
+          object-fit: contain !important; // no trimming
+          aspect-ratio: auto !important; // no "Constrain proportions"
+        }
+      }
+    }
+
+    // 2-6 images: square & grids
+    &:has(> :nth-child(2)) {
+      >* {
+        aspect-ratio: 1 / 1 !important;
+
+        img,
+        video {
+          aspect-ratio: 1 / 1 !important; // use square
+        }
+      }
+    }
+
+    // 2 images (side-by-side)
+    &:has(> :last-child:nth-child(2)) {
+      >* {
+        grid-column: span 3 !important;
+      }
+    }
+
+    // 3 images (1 major (left) + 2 minors)
+    &:has(> :last-child:nth-child(3)) {
+      > :nth-child(1) {
+        grid-column: span 4 !important;
+        grid-row: span 2 !important;
+      }
+
+      > :nth-child(2),
+      > :nth-child(3) {
+        grid-column: span 2 !important;
+      }
+    }
+
+    // 4 images (wide, 1.6:1)
+    &:has(> :last-child:nth-child(4)) {
+      >* {
+        grid-column: span 3 !important;
+        aspect-ratio: 1.6 / 1 !important;
+      }
+    }
+
+    // 5 images (top 2, bottom 3)
+    &:has(> :last-child:nth-child(5)) {
+
+      > :nth-child(1),
+      > :nth-child(2) {
+        grid-column: span 3 !important;
+      }
+
+      > :nth-child(3),
+      > :nth-child(4),
+      > :nth-child(5) {
+        grid-column: span 2 !important;
+      }
+    }
+
+    // 6 images (top 3, bottom 3)
+    &:has(> :last-child:nth-child(6)) {
+      >* {
+        grid-column: span 2 !important;
+      }
+    }
+
+    figcaption {
+      grid-column: 1 / -1 !important;
+    }
   }
 }
