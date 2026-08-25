@@ -1,6 +1,5 @@
 # My Tutorials
 
-[![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE)
 ![Jekyll](https://img.shields.io/badge/Jekyll-%23CC0000?logo=jekyll)
 
 A Jekyll blog for hosting my tips I wrote on Discord.
