@@ -37,4 +37,4 @@ if that didn't work, you can
 
 You should build the model (enable Physics, SDEF, morph drivers) before importing motion.
 
-If you imported motion without enabling physics, you should go to first frame then toggle physics.
+If you imported motion without enabling physics, you should go to the first frame (frame 0) then toggle physics.
