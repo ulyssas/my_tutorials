@@ -1,0 +1,36 @@
+{% comment %}
+auto path completion
+  1. Use URL as-is if it includes http(s)://
+  2. Relative path if it starts from /
+  3. auto complete (filename) for everything else
+
+Usage: {% include resolve-path.html file=include.url %}
+Returns variables:
+  - resolved_src (relative_url)
+  - resolved_abs_src (absolute_url)
+  - resolved_type ('video' or 'image')
+{% endcomment %}
+
+{% assign target = include.file %}
+{% assign first_char = target | slice: 0 %}
+
+{% if target contains '://' %}
+  {% assign resolved_src = target %}
+  {% assign resolved_abs_src = target %}
+{% elsif first_char == '/' %}
+  {% assign resolved_src = target | relative_url %}
+  {% assign resolved_abs_src = target | absolute_url %}
+{% else %}
+  {% assign post_basename = page.path | split: "/" | last | remove: ".md" %}
+  {% assign folder_id = post_basename | slice: 11, 255 %}
+  {% assign img_base = "/assets/images/" | append: folder_id | append: "/" %}
+  {% assign resolved_src = img_base | append: target | relative_url %}
+  {% assign resolved_abs_src = img_base | append: target | absolute_url %}
+{% endif %}
+
+{% assign ext = target | split: "." | last | downcase %}
+{% if ext == 'mp4' or ext == 'webm' or ext == 'mov' %}
+  {% assign resolved_type = 'video' %}
+{% else %}
+  {% assign resolved_type = 'image' %}
+{% endif %}

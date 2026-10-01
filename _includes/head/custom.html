@@ -10,4 +10,25 @@
 {% endif %}
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
 
+<!-- Discord / OGP Direct Embed -->
+{% if page.embed_media %}
+  {% include resolve-path.html file=page.embed_media.file %}
+
+  {% if resolved_type == 'video' %}
+    <meta property="og:type" content="video.other" />
+    <meta property="og:video" content="{{ resolved_abs_src }}" />
+    <meta property="og:video:url" content="{{ resolved_abs_src }}" />
+    <meta property="og:video:secure_url" content="{{ resolved_abs_src }}" />
+    <meta property="og:video:type" content="video/mp4" />
+    {% if page.embed_media.width %}<meta property="og:video:width" content="{{ page.embed_media.width }}" />{% endif %}
+    {% if page.embed_media.height %}<meta property="og:video:height" content="{{ page.embed_media.height }}" />{% endif %}
+
+  {% elsif resolved_type == 'image' %}
+    <meta property="og:image" content="{{ resolved_abs_src }}" />
+    {% if page.embed_media.width %}<meta property="og:image:width" content="{{ page.embed_media.width }}" />{% endif %}
+    {% if page.embed_media.height %}<meta property="og:image:height" content="{{ page.embed_media.height }}" />{% endif %}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="{{ resolved_abs_src }}" />
+  {% endif %}
+{% endif %}
 <!-- end custom head snippets -->
