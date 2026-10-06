@@ -6,7 +6,7 @@ redirect_from:
 categories:
   - Tutorial-Blender
 tags:
-  - misc
+  - addons
 ---
 
 If you have updated Robust Weight Transfer from old version (like v1.0), it might crash Blender.
