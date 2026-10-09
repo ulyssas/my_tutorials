@@ -39,4 +39,4 @@ export LANG=ja_JP.UTF-8;export LC_ALL="ja_JP"
 
 {% include discord-gallery.html id="gallery2" %}
 
-credit: にがもん式霊夢, Appearance Miku by ままま
+credit: にがもん式霊夢, Appearance Miku by ままま、アラン・スミシー

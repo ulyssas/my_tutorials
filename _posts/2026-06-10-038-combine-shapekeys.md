@@ -1,5 +1,5 @@
 ---
-title: "How to combine shapekeys"
+title: "How to combine shape keys"
 redirect_from:
   - /038
   - /38

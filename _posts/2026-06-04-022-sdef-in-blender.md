@@ -46,4 +46,4 @@ SDEF driver might occasionally break, so you may need to press SDEF button again
 
 {% include discord-gallery.html id="gallery3" %}
 
-credit: Appearance Miku by ままま
+credit: Appearance Miku by ままま、アラン・スミシー
